@@ -44,11 +44,11 @@ namespace BigRacing
             }
         }
 
-        public Participant(string name, byte p, byte d, byte i): base(name)
+        public Participant(string name, byte power, byte dexterirty, byte intelligence) : base(name)
         {
-            Power = p;
-            Dexterirty = d;
-            Intelligence = i;
+            Power = power;
+            Dexterirty = dexterirty;
+            Intelligence = intelligence;
         }
         public Participant()
         {
