@@ -15,12 +15,23 @@ namespace BigRacing
 
         static void Main(string[] args)
         {
-            Game game = new Game();
-            game.Organizer = new Organizer("Оливье Ганьян", 8_939_377_65_12, "Ols@mail.ru");
-            Teem teemR = new Teem("Russia", GetParticipantsFromFiles(PATH: PathToRussia));
-            Teem teemF = new Teem("France", GetParticipantsFromFiles(PATH: PathToFrance));
-            Teem teemU = new Teem("Ukraine", GetParticipantsFromFiles(PATH: PathToUkraine));
-            Teem teemC = new Teem("Chine", GetParticipantsFromFiles(PATH: PathToChine));
+            BR game = new BR("Большие гонки ", new Organizer("Оливье Ганьян", 8_939_377_65_12, "Ols@mail.ru"),
+                "На шоу Большие гонки собираются 4 команды из разных стран. В команде по 15 человек." +
+                "Всего за одну игру команда проходит по 6 испытаний(6 разных игр).");
+            game.Teems = new List<Teem>() 
+            {
+            new Teem("Russia", GetParticipantsFromFiles(PATH: PathToRussia)),
+            new Teem("France", GetParticipantsFromFiles(PATH: PathToFrance)),
+            new Teem("Ukraine", GetParticipantsFromFiles(PATH: PathToUkraine)),
+            new Teem("Chine", GetParticipantsFromFiles(PATH: PathToChine))
+            };
+            game.PlayGame(new Fishing());
+            game.PlayGame(new MyGame());
+            game.PlayGame(new Slide());
+            game.PlayGame(new Sea());
+            game.PlayGame(new Postmen());
+            game.PlayGame(new Mousetrap());
+            game.DisplayWinner();
         }
         static List<Participant> GetParticipantsFromFiles(string PATH)
         {
