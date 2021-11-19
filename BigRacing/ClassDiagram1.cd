@@ -1,21 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="BigRacing.Human" Collapsed="true">
-    <Position X="7.25" Y="1.5" Width="1.5" />
+    <Position X="7.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAQQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Human.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BigRacing.Organizer" Collapsed="true">
-    <Position X="8.5" Y="2.75" Width="1.5" />
+  <Class Name="BigRacing.Organizer">
+    <Position X="8.5" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAAAgAAAAQQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Organizer.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BigRacing.Participant" Collapsed="true">
-    <Position X="6.25" Y="2.75" Width="1.5" />
+  <Class Name="BigRacing.Participant">
+    <Position X="6.25" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
     <TypeIdentifier>
       <HashCode>AAAAIAAAAAEAAAABAAAAAQAAAAEAAAABAAAAAAAAACA=</HashCode>
       <FileName>Participant.cs</FileName>
@@ -23,6 +29,9 @@
   </Class>
   <Class Name="BigRacing.Teem">
     <Position X="2.25" Y="1.5" Width="1.5" />
+    <Members>
+      <Method Name="Teem" Hidden="true" />
+    </Members>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAQAAAAABAAAAQAAAAAAAAAAAAAIAAAAAA=</HashCode>
       <FileName>Teem.cs</FileName>
@@ -86,6 +95,10 @@
   </Class>
   <Class Name="BigRacing.BR">
     <Position X="3.75" Y="1.5" Width="1.5" />
+    <Members>
+      <Method Name="BR" Hidden="true" />
+      <Method Name="DisplayWinner" Hidden="true" />
+    </Members>
     <TypeIdentifier>
       <HashCode>AAAACAAAAAAAAAABAAAAAAQAAAAIAAIAAIAAAAAAAAA=</HashCode>
       <FileName>BR.cs</FileName>

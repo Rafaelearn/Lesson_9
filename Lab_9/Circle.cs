@@ -23,7 +23,7 @@ namespace Lab_9
         }
         public override void Display()
         {
-            Console.WriteLine($"Radius = {radius}");
+            Console.WriteLine($"Radius = {Radius}");
             base.Display();
         }
         public double GetSquare()
